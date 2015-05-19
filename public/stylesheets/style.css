@@ -88,9 +88,11 @@ h3 {
     font-size: 30px;
     float: right;
     text-align: center;
+    margin-right: 200px;
 }
-.container {
+.container-fluid{
     float:left;
+    width: 500px;
     margin-left: 100px;
 }
 
