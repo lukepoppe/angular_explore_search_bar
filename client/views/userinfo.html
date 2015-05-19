@@ -1,0 +1,16 @@
+
+<div class="container-fluid" >
+            <div>
+                <h1>{{heading}}</h1>
+                <h3>Ways to eat BACON!</h3>
+                    <div ng-controller="myCtrl">
+                        <input type="text" ng-model="search">
+                        <button type="submit">Filter</button>
+                        <ul>
+                            <li ng-animate="'animate'" ng-repeat="bacon in bacon| filter:search"  class="repeated-item">
+                                {{bacon}}
+                            </li>
+                        </ul>
+                    </div>
+             </div>
+</div>
