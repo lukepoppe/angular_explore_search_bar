@@ -1,16 +1,21 @@
 
 <div class="container-fluid" >
-            <div>
+            <div ng-controller="myCtrl">
                 <h1>{{heading}}</h1>
-                <h3>Ways to eat BACON!</h3>
-                    <div ng-controller="myCtrl">
+
+                <h3>Search ClassMates</h3>
+                    <div>
                         <input type="text" ng-model="search">
                         <button type="submit">Filter</button>
+                        <h2>Email Address for: {{search}}</h2>
                         <ul>
-                            <li ng-animate="'animate'" ng-repeat="bacon in bacon| filter:search"  class="repeated-item">
-                                {{bacon}}
+                            <li ng-animate="'animate'" ng-repeat="contact in contact| filter:search" ng-model="contact.name" class="repeated-item">
+                                <!--{{contact.name}}-->
+                                {{contact.email}}
                             </li>
                         </ul>
                     </div>
              </div>
+
+
 </div>
